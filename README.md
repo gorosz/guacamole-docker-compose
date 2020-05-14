@@ -15,10 +15,10 @@ Clone the GIT repository, build target server and start guacamole:
 
 
 ~~~bash
-git clone "https://github.com/boschkundendienst/guacamole-docker-compose.git"
-cd guacamole-docker-compose
-cd ubuntu_sshd
+git clone "https://github.com/gorosz/guacamole-docker-compose.git"
+cd guacamole-docker-compose/ubuntu_sshd
 docker build -t ubuntu-sshd:latest .
+cd ..
 ./prepare.sh
 docker-compose up -d
 ~~~
